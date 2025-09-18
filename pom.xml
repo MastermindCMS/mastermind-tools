@@ -5,11 +5,30 @@
     <artifactId>mastermindcms-tools</artifactId>
     <name>Tools</name>
     <version>1.0.0</version>
+    <description>Common tools for MastermindCMS family products.</description>
+    <url>https://github.com/MastermindCMS/mastermind-tools</url>
     <packaging>pom</packaging>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Alexander Yanchin</name>
+            <email>info@mastermindcms.com</email>
+            <organization>MastermindCMS</organization>
+            <organizationUrl>http://www.mastermindcms.com</organizationUrl>
+        </developer>
+    </developers>
 
     <scm>
         <connection>scm:git:https://github.com/MastermindCMS/mastermind-tools.git</connection>
         <developerConnection>scm:git:https://github.com/MastermindCMS/mastermind-tools.git</developerConnection>
+        <url>https://github.com/MastermindCMS/mastermind-tools/tree/main</url>
     </scm>
 
     <properties>
@@ -43,6 +62,15 @@
                 <inherited>false</inherited>
                 <configuration>
                     <generateBackupPoms>false</generateBackupPoms>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.8.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
                 </configuration>
             </plugin>
         </plugins>
