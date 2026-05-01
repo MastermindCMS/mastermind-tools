@@ -2,10 +2,10 @@ package com.mastermindcms.ai.gpt.services;
 
 import com.mastermindcms.ai.gpt.config.AiConfiguration;
 import com.theokanning.openai.service.OpenAiService;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.time.Duration;
 import java.util.Objects;
 
